@@ -17,11 +17,13 @@ Set password for nikita_user2 = ”12345”;
 Grant select on pr1_samokhvalov * to nikita_user1  with grant option;
 Grant update on pr1_samokhvalov * to nikita_user2  with grant option;
 
-8. Под nikita_user1
+8. 
+Под nikita_user1
 set password=11111;
 select * from TTN_nikita;
 
-9. Под nikita_user2
+9. 
+Под nikita_user2
 UPDATE Tovari
 SET    price = 9999
 WHERE  id_tov = (SELECT Max(id_tov) 
